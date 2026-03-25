@@ -35,3 +35,8 @@ def compress_traditional_sweep(input_wav, track_name, bitrates=["8k", "12k", "24
 
 # Run the function on your chosen audio file
 trad_files = compress_traditional_sweep("source-audio/27.flac", "track-27")
+print(trad_files)
+trad_files = compress_traditional_sweep("source-audio/49.flac", "track-49")
+print(trad_files)
+trad_files = compress_traditional_sweep("source-audio/69.flac", "track-69")
+print(trad_files)
