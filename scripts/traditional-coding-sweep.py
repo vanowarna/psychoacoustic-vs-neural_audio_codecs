@@ -1,0 +1,37 @@
+import os
+from pydub import AudioSegment
+def compress_traditional_sweep(input_wav, bitrates=["8k", "12k", "24k", "48k", "64k"]):
+    """
+    Compresses a WAV file to MP3 and AAC across 5 bitrates,
+    then decodes them back to WAV for mathematical analysis.
+    """
+    print("--- Processing Traditional Codecs ---")
+    audio = AudioSegment.from_wav(input_wav)
+    recon_files = {"mp3": {}, "aac": {}}
+    
+    for br in bitrates:
+        print(f"Encoding at {br}bps...")
+        
+        # MP3 Processing
+        mp3_path = f"temp_{br}.mp3"
+        mp3_recon = f"recon_mp3_{br}.wav"
+        audio.export(mp3_path, format="mp3", bitrate=br)
+        AudioSegment.from_mp3(mp3_path).export(mp3_recon, format="wav")
+        recon_files["mp3"][br] = mp3_recon
+        
+        # AAC Processing (requires ffmpeg installed on OS)
+        aac_path = f"export-output/traditional-coding/temp_{br}.aac"
+        aac_recon = f"export-output/traditional-coding/recon_aac_{br}.wav"
+        audio.export(aac_path, format="adts", bitrate=br)
+        AudioSegment.from_file(aac_path, format="aac").export(aac_recon, format="wav")
+        recon_files["aac"][br] = aac_recon
+        
+        # Clean up the compressed files to save disk space
+        os.remove(mp3_path)
+        os.remove(aac_path)
+        
+    print("Traditional compression sweep complete.\n")
+    return recon_files
+
+# Run the function on your chosen audio file
+trad_files = compress_traditional_sweep("source-audio/27.flac")
