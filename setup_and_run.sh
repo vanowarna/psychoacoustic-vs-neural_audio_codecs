@@ -73,27 +73,27 @@ create_dir_if_missing() {
 
 create_dir_if_missing "export-output/traditional-coding"
 create_dir_if_missing "export-output/neural-coding"
-# =========================
-# Run Scripts
-# =========================
-echo "🚀 Running Traditional Codec Sweep..."
-if python scripts/traditional-coding-sweep.py; then
-    echo "✅ Traditional sweep completed"
-else
-    echo "⚠️ Traditional sweep failed, continuing..."
-fi
+# # =========================
+# # Run Scripts
+# # =========================
+# echo "🚀 Running Traditional Codec Sweep..."
+# if python scripts/traditional-coding-sweep.py; then
+#     echo "✅ Traditional sweep completed"
+# else
+#     echo "⚠️ Traditional sweep failed, continuing..."
+# fi
 
-echo "🚀 Running Neural Codec Sweep..."
-if python scripts/neural-coding-sweep.py; then
-    echo "✅ Neural sweep completed"
-else
-    echo "⚠️ Neural sweep failed, continuing..."
-fi
+# echo "🚀 Running Neural Codec Sweep..."
+# if python scripts/neural-coding-sweep.py; then
+#     echo "✅ Neural sweep completed"
+# else
+#     echo "⚠️ Neural sweep failed, continuing..."
+# fi
 
-# =========================
-# Done
-# =========================
-echo "=============================="
-echo " ✅ Pipeline Finished "
-echo "📁 Outputs available in: export-output/"
-echo "=============================="
+# # =========================
+# # Done
+# # =========================
+# echo "=============================="
+# echo " ✅ Pipeline Finished "
+# echo "📁 Outputs available in: export-output/"
+# echo "=============================="
