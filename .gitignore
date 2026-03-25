@@ -1,3 +1,5 @@
 export-output/traditional-coding/*
 export-output/neural-coding/*
 
+!export-output/traditional-coding/.gitkeep
+!export-output/neural-coding/.gitkeep
