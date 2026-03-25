@@ -41,13 +41,10 @@ def compress_neural_sweep(input_wav, track_name, bandwidths=[1.5, 3.0, 6.0, 12.0
     print("Neural compression sweep complete.\n")
     return recon_files
 
-
 # Run the function on your chosen audio file
 neural_files = compress_neural_sweep("source-audio/27.flac", "track-27")
 print(neural_files)
-
 neural_files = compress_neural_sweep("source-audio/49.flac", "track-49")
 print(neural_files)
-
 neural_files = compress_neural_sweep("source-audio/69.flac", "track-69")
 print(neural_files)
