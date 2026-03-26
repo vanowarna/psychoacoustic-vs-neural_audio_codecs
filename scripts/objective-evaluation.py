@@ -141,7 +141,9 @@ def plot_rd_curve(original_wav):
     plt.legend(loc="upper left", frameon=True)
     plt.xlim(0, 66)
     plt.ylim(-5, 17.5)
-    plt.savefig(f"rd_curve_track_{track_id}.png", dpi=300, bbox_inches="tight")
+    plot_dir = Path("export-output/plots")
+    plot_dir.mkdir(parents=True, exist_ok=True)
+    plt.savefig(plot_dir / f"rd_curve_track_{track_id}.png", dpi=300, bbox_inches="tight")
     # plt.show()
 
 # Plotting
