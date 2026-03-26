@@ -1,0 +1,282 @@
+.
+├── .git
+│   ├── COMMIT_EDITMSG
+│   ├── FETCH_HEAD
+│   ├── HEAD
+│   ├── ORIG_HEAD
+│   ├── config
+│   ├── description
+│   ├── hooks
+│   │   ├── applypatch-msg.sample
+│   │   ├── commit-msg.sample
+│   │   ├── fsmonitor-watchman.sample
+│   │   ├── post-checkout
+│   │   ├── post-commit
+│   │   ├── post-merge
+│   │   ├── post-update.sample
+│   │   ├── pre-applypatch.sample
+│   │   ├── pre-commit.sample
+│   │   ├── pre-merge-commit.sample
+│   │   ├── pre-push
+│   │   ├── pre-push.sample
+│   │   ├── pre-rebase.sample
+│   │   ├── pre-receive.sample
+│   │   ├── prepare-commit-msg.sample
+│   │   ├── push-to-checkout.sample
+│   │   ├── sendemail-validate.sample
+│   │   └── update.sample
+│   ├── index
+│   ├── info
+│   │   └── exclude
+│   ├── lfs
+│   │   ├── cache
+│   │   │   └── locks
+│   │   │       └── refs
+│   │   │           └── heads
+│   │   │               └── develop
+│   │   │                   └── verifiable
+│   │   └── tmp
+│   ├── logs
+│   │   ├── HEAD
+│   │   └── refs
+│   │       ├── heads
+│   │       │   └── develop
+│   │       └── remotes
+│   │           └── origin
+│   │               ├── HEAD
+│   │               ├── develop
+│   │               └── main
+│   ├── objects
+│   │   ├── 01
+│   │   │   └── 8651a17c882497f0dc1a143d1f091efe1364c7
+│   │   ├── 03
+│   │   │   └── e1cf113d73db007b2b6412e71cc309dbb6653d
+│   │   ├── 04
+│   │   │   └── 44d5f88b3ef440b38ea2c98d28bb443f4eb88a
+│   │   ├── 09
+│   │   │   └── c1660ea9ea1187cb72cd8c517f75232869e62d
+│   │   ├── 0d
+│   │   │   └── b5d335c2f791af3ab2b094f79ef3901b6c21f0
+│   │   ├── 0f
+│   │   │   └── 4ef27e2d3ccae0357616bfaa3d792ee01f5c8c
+│   │   ├── 10
+│   │   │   └── 1cafd875a24a7f880600027325e53da1f95e88
+│   │   ├── 11
+│   │   │   └── 2a4b1489c0c8a1e089c5b2fadbb8574520064f
+│   │   ├── 12
+│   │   │   └── 88ddf50e43e56c9aa94639558e89f6885a3aa1
+│   │   ├── 14
+│   │   │   └── 933c1d2fc648fe5158b9ee6d7fc53a621f3fa4
+│   │   ├── 18
+│   │   │   └── 893fcc6d3ebb6e11b2731fe870647b9b5bc951
+│   │   ├── 19
+│   │   │   └── 225d9d477abdfbd9a5e817a68e2629e384a736
+│   │   ├── 24
+│   │   │   └── abe522a9ac411ecc40bfed4afb770c4ebb8ac8
+│   │   ├── 25
+│   │   │   └── b711f510881e0abc806780cc46dab921e1d393
+│   │   ├── 2d
+│   │   │   └── e3b93f41a1dc59e32fea18f563139e8fcfdf79
+│   │   ├── 2e
+│   │   │   └── d84a822df3d25490866ee405609f177d7a09f6
+│   │   ├── 2f
+│   │   │   ├── 0790a4fad74891e8a9bf6491810d9a8d0a3cce
+│   │   │   ├── 13b7d8a14d6a10b54814c5859f9593c9b2409e
+│   │   │   └── 5550f3c88db5692b3ccdd4ad0075560bc38ec8
+│   │   ├── 30
+│   │   │   └── 5209be2bc6f20fb82e07247a748d52b119de49
+│   │   ├── 33
+│   │   │   └── 695afe04f284082c82f4fdc3a02effa69cc19e
+│   │   ├── 36
+│   │   │   └── 6adf1ec6ac83e47543b43e3d8b25299edf5735
+│   │   ├── 39
+│   │   │   └── 474bf5f943a0fe84415ef23628c9dac8f99b20
+│   │   ├── 3d
+│   │   │   └── e8074b7fa10c8098defbd5a5b8e7fc0908025e
+│   │   ├── 3f
+│   │   │   └── 133523bc0b5742b21bdfb22cf2724d8512700b
+│   │   ├── 41
+│   │   │   └── 90652cef95756b172ae5e8fae2b1979769112c
+│   │   ├── 4f
+│   │   │   └── 66175e567c021285b398467d55db2a0b6bc257
+│   │   ├── 50
+│   │   │   └── 836005d9d127f663ce113f8296a7aa7790aa4b
+│   │   ├── 57
+│   │   │   └── 8405505588ca550d36ad0f44ce739ef275297d
+│   │   ├── 58
+│   │   │   └── 26cc3a48f2e1b72dbfda172b6f6fd146daadbe
+│   │   ├── 59
+│   │   │   └── 50d369c6b7c9e422d63247add568d325da54af
+│   │   ├── 60
+│   │   │   └── 84f75e78392c8371e9d08054874cc2c9fb1719
+│   │   ├── 62
+│   │   │   └── 3f7f1381fc2a686d021d3bf736b2b4438cde7f
+│   │   ├── 63
+│   │   │   └── 4539eb41476f4a8d41be348b6a1004b4c1535f
+│   │   ├── 69
+│   │   │   ├── 7fe56609162bf4adeb6d59ffa5e2f72311ecd7
+│   │   │   └── ac99fba1f853f9215123a82d86be104bc6a50a
+│   │   ├── 6d
+│   │   │   ├── a58214a650c4593416f7c28ba5d59a46031fc2
+│   │   │   └── bd5df9dd56af39dde4db50de7477f6a6ddaf0c
+│   │   ├── 78
+│   │   │   └── 1aa38383f5a298c51a45d3705f2f49055bc076
+│   │   ├── 79
+│   │   │   └── 174c86f2f617eb70f2a2dbda934f0f50767908
+│   │   ├── 7a
+│   │   │   └── db7c28b21a260f651b5984c0cd5d8500a8ece5
+│   │   ├── 7e
+│   │   │   └── 267acfe2bed5a976f65b78cdcabf01a07e9a7e
+│   │   ├── 7f
+│   │   │   ├── 4fa216411b14eb2395e01e55ff314bf384bacb
+│   │   │   └── 8f9bf6bce8502e69e7c4ee249bebde600752ca
+│   │   ├── 81
+│   │   │   └── b34473a1f9c79fdeb9766e7d53cce2b44f5e0d
+│   │   ├── 82
+│   │   │   └── e3cec71e0d1b58debcdfb46eaba30c06fad11d
+│   │   ├── 92
+│   │   │   ├── aa12de8a94ee0ac1c796ea61ef67a197b77a92
+│   │   │   └── e4754f1dc5cb116b823d9197903d2385c00666
+│   │   ├── 9d
+│   │   │   └── 50564e82f6c68f6460f48c8693f43f60761005
+│   │   ├── a4
+│   │   │   └── c6d467dda6924cfd2c26b3859a9c6ccca4125b
+│   │   ├── a9
+│   │   │   └── d330c3905f7aca412a65f2650882647353fbe0
+│   │   ├── ab
+│   │   │   └── 32a1bb7f3c1cab5fa5cb343a902dd028733e01
+│   │   ├── ac
+│   │   │   └── 94ee6dae645dc6334b93954bb30039dbba8524
+│   │   ├── ad
+│   │   │   ├── 04c0b1cff359310a5ef3b148a7b8dde92ff991
+│   │   │   └── c30543f31558ebdd166e71cc2c7d72e03c7da8
+│   │   ├── ae
+│   │   │   └── f89b1966709d972ef3c2719a00caf7d9b1d862
+│   │   ├── b1
+│   │   │   └── 22133e5d7fd67087ba730b7401ff3360b62420
+│   │   ├── b6
+│   │   │   └── 4950c753e9f11c8431834225a46f21d0c328a2
+│   │   ├── b9
+│   │   │   └── 1ea7f31d1d6b5316e6b7dab74829018b40375c
+│   │   ├── ba
+│   │   │   └── 95a6d6f04d9f526e352df73672fdcb83c8bd14
+│   │   ├── be
+│   │   │   └── 7b6c9fdef911725f1d27678cd40a35fa7b8203
+│   │   ├── c0
+│   │   │   └── b52becfe7c968eacd3d619c9c595d1b1cbf4bd
+│   │   ├── c1
+│   │   │   └── 6dd9261178c070f34a212c610b980aff07f392
+│   │   ├── c5
+│   │   │   └── e3d0a0e820119db447293e726b2c71af3476d5
+│   │   ├── ce
+│   │   │   └── ec665d4283e0ff9bfc5b3a9530b3957fa53f8b
+│   │   ├── cf
+│   │   │   └── c9bdbe27e317c232894c2a08a37db710f9194b
+│   │   ├── d4
+│   │   │   └── 043ff2284afaec675840b510d4fbd8a072fbae
+│   │   ├── d5
+│   │   │   └── a6d1a7835a39481f3868b13e604d6a59909ca7
+│   │   ├── db
+│   │   │   └── 004fb44e82ceadee404f1b68a23d31cece5953
+│   │   ├── dc
+│   │   │   ├── 4f3b824605622b822deeb5dc9c50865b699e19
+│   │   │   ├── 57172e4b979d80151a4aaf1786c8fe0287b461
+│   │   │   ├── acbaed2031efab3f2330b37c8e55985fb28782
+│   │   │   └── f74e44937212928312b10c0462ce18ad9331b0
+│   │   ├── e0
+│   │   │   └── 581d328fedaf8964f05d3878ac9c0f043ef06a
+│   │   ├── e6
+│   │   │   └── 54b955ae282c5f5cf7727c3a13c70db1899ddc
+│   │   ├── e7
+│   │   │   └── 4bfe70ce9890c13fad7238d2d36031aefe7000
+│   │   ├── eb
+│   │   │   └── b11014c7688f8f4a8ddfcf234c2182f38b6e32
+│   │   ├── f4
+│   │   │   └── 181b4fecc7322ea825d9076cf42756e413b6d5
+│   │   ├── f5
+│   │   │   ├── 3d0e5dd217c07f5d2c58e65e348c6cae2165fb
+│   │   │   ├── 42d881060735578ba0625f2e8f11ec553d9f44
+│   │   │   └── 820263743ea34b5e80597191ac36f9eb74c89d
+│   │   ├── f8
+│   │   │   └── dd1471fa715c89d3b1ac769a51a01b4d7cc8c7
+│   │   ├── fd
+│   │   │   └── 92cf24cbbcff04f33410ad3ed97db228e4f0ce
+│   │   ├── info
+│   │   └── pack
+│   │       ├── pack-bb8918a16f8ce555e01026c86c7572f838a3fc82.idx
+│   │       ├── pack-bb8918a16f8ce555e01026c86c7572f838a3fc82.pack
+│   │       └── pack-bb8918a16f8ce555e01026c86c7572f838a3fc82.rev
+│   ├── packed-refs
+│   └── refs
+│       ├── heads
+│       │   └── develop
+│       ├── remotes
+│       │   └── origin
+│       │       ├── HEAD
+│       │       ├── develop
+│       │       └── main
+│       └── tags
+├── .gitignore
+├── README.md
+├── export-output
+│   ├── neural-coding
+│   │   ├── .gitkeep
+│   │   ├── recon_track-27_neural_1.5k.wav
+│   │   ├── recon_track-27_neural_12.0k.wav
+│   │   ├── recon_track-27_neural_24.0k.wav
+│   │   ├── recon_track-27_neural_3.0k.wav
+│   │   ├── recon_track-27_neural_6.0k.wav
+│   │   ├── recon_track-49_neural_1.5k.wav
+│   │   ├── recon_track-49_neural_12.0k.wav
+│   │   ├── recon_track-49_neural_24.0k.wav
+│   │   ├── recon_track-49_neural_3.0k.wav
+│   │   ├── recon_track-49_neural_6.0k.wav
+│   │   ├── recon_track-69_neural_1.5k.wav
+│   │   ├── recon_track-69_neural_12.0k.wav
+│   │   ├── recon_track-69_neural_24.0k.wav
+│   │   ├── recon_track-69_neural_3.0k.wav
+│   │   └── recon_track-69_neural_6.0k.wav
+│   └── traditional-coding
+│       ├── .gitkeep
+│       ├── recon_track-27_aac_12k.wav
+│       ├── recon_track-27_aac_24k.wav
+│       ├── recon_track-27_aac_48k.wav
+│       ├── recon_track-27_aac_64k.wav
+│       ├── recon_track-27_aac_8k.wav
+│       ├── recon_track-27_mp3_12k.wav
+│       ├── recon_track-27_mp3_24k.wav
+│       ├── recon_track-27_mp3_48k.wav
+│       ├── recon_track-27_mp3_64k.wav
+│       ├── recon_track-27_mp3_8k.wav
+│       ├── recon_track-49_aac_12k.wav
+│       ├── recon_track-49_aac_24k.wav
+│       ├── recon_track-49_aac_48k.wav
+│       ├── recon_track-49_aac_64k.wav
+│       ├── recon_track-49_aac_8k.wav
+│       ├── recon_track-49_mp3_12k.wav
+│       ├── recon_track-49_mp3_24k.wav
+│       ├── recon_track-49_mp3_48k.wav
+│       ├── recon_track-49_mp3_64k.wav
+│       ├── recon_track-49_mp3_8k.wav
+│       ├── recon_track-69_aac_12k.wav
+│       ├── recon_track-69_aac_24k.wav
+│       ├── recon_track-69_aac_48k.wav
+│       ├── recon_track-69_aac_64k.wav
+│       ├── recon_track-69_aac_8k.wav
+│       ├── recon_track-69_mp3_12k.wav
+│       ├── recon_track-69_mp3_24k.wav
+│       ├── recon_track-69_mp3_48k.wav
+│       ├── recon_track-69_mp3_64k.wav
+│       └── recon_track-69_mp3_8k.wav
+├── scripts
+│   ├── neural-coding-sweep.py
+│   ├── objective-evaluation.py
+│   └── traditional-coding-sweep.py
+├── setup_and_run.sh
+├── source-audio
+│   ├── 27.flac
+│   ├── 49.flac
+│   └── 69.flac
+└── tree_output.txt
+
+100 directories, 180 files
