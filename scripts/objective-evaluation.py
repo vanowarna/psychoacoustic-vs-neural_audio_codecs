@@ -144,7 +144,6 @@ def plot_rd_curve(original_wav):
     plt.savefig(f"rd_curve_track_{track_id}.png", dpi=300, bbox_inches="tight")
     # plt.show()
 
-
 # Plotting
 plot_rd_curve("source-audio/27.flac")
 plot_rd_curve("source-audio/49.flac")
