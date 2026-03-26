@@ -139,7 +139,8 @@ def plot_rd_curve(original_wav):
     plt.ylabel("Signal-to-Noise Ratio (dB)")
     plt.grid(True)
     plt.legend()
-
+    plt.xlim(0, 66)
+    plt.ylim(-5, 17.5)
     plt.savefig(f"rd_curve_track_{track_id}.png", dpi=300, bbox_inches="tight")
     # plt.show()
 
