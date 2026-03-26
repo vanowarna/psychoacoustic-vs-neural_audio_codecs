@@ -65,6 +65,8 @@
 │   │   │   └── 2a4b1489c0c8a1e089c5b2fadbb8574520064f
 │   │   ├── 12
 │   │   │   └── 88ddf50e43e56c9aa94639558e89f6885a3aa1
+│   │   ├── 13
+│   │   │   └── 891ca37da40e0fcd60f146002e8b455ff26bbc
 │   │   ├── 14
 │   │   │   └── 933c1d2fc648fe5158b9ee6d7fc53a621f3fa4
 │   │   ├── 18
@@ -107,6 +109,8 @@
 │   │   │   └── 26cc3a48f2e1b72dbfda172b6f6fd146daadbe
 │   │   ├── 59
 │   │   │   └── 50d369c6b7c9e422d63247add568d325da54af
+│   │   ├── 5f
+│   │   │   └── fffe962cae0f54b4b99dffdb6da396bc72b1f7
 │   │   ├── 60
 │   │   │   └── 84f75e78392c8371e9d08054874cc2c9fb1719
 │   │   ├── 62
@@ -134,9 +138,13 @@
 │   │   │   └── b34473a1f9c79fdeb9766e7d53cce2b44f5e0d
 │   │   ├── 82
 │   │   │   └── e3cec71e0d1b58debcdfb46eaba30c06fad11d
+│   │   ├── 86
+│   │   │   └── 4defa0b1867d1501c8c5ade1d1786e5776a648
 │   │   ├── 92
 │   │   │   ├── aa12de8a94ee0ac1c796ea61ef67a197b77a92
 │   │   │   └── e4754f1dc5cb116b823d9197903d2385c00666
+│   │   ├── 98
+│   │   │   └── aacc2d5e79700de79f7daea04a29cdf218c1be
 │   │   ├── 9d
 │   │   │   └── 50564e82f6c68f6460f48c8693f43f60761005
 │   │   ├── a4
@@ -172,6 +180,8 @@
 │   │   │   └── ec665d4283e0ff9bfc5b3a9530b3957fa53f8b
 │   │   ├── cf
 │   │   │   └── c9bdbe27e317c232894c2a08a37db710f9194b
+│   │   ├── d0
+│   │   │   └── e0377de08be527da1027bda8aeb6a89ca50783
 │   │   ├── d4
 │   │   │   └── 043ff2284afaec675840b510d4fbd8a072fbae
 │   │   ├── d5
@@ -221,53 +231,59 @@
 ├── export-output
 │   ├── neural-coding
 │   │   ├── .gitkeep
-│   │   ├── recon_track-27_neural_1.5k.wav
-│   │   ├── recon_track-27_neural_12.0k.wav
-│   │   ├── recon_track-27_neural_24.0k.wav
-│   │   ├── recon_track-27_neural_3.0k.wav
-│   │   ├── recon_track-27_neural_6.0k.wav
-│   │   ├── recon_track-49_neural_1.5k.wav
-│   │   ├── recon_track-49_neural_12.0k.wav
-│   │   ├── recon_track-49_neural_24.0k.wav
-│   │   ├── recon_track-49_neural_3.0k.wav
-│   │   ├── recon_track-49_neural_6.0k.wav
-│   │   ├── recon_track-69_neural_1.5k.wav
-│   │   ├── recon_track-69_neural_12.0k.wav
-│   │   ├── recon_track-69_neural_24.0k.wav
-│   │   ├── recon_track-69_neural_3.0k.wav
-│   │   └── recon_track-69_neural_6.0k.wav
+│   │   ├── track-27_neural
+│   │   │   ├── recon_track-27_neural_1.5k.wav
+│   │   │   ├── recon_track-27_neural_12.0k.wav
+│   │   │   ├── recon_track-27_neural_24.0k.wav
+│   │   │   ├── recon_track-27_neural_3.0k.wav
+│   │   │   └── recon_track-27_neural_6.0k.wav
+│   │   ├── track-49_neural
+│   │   │   ├── recon_track-49_neural_1.5k.wav
+│   │   │   ├── recon_track-49_neural_12.0k.wav
+│   │   │   ├── recon_track-49_neural_24.0k.wav
+│   │   │   ├── recon_track-49_neural_3.0k.wav
+│   │   │   └── recon_track-49_neural_6.0k.wav
+│   │   └── track-69_neural
+│   │       ├── recon_track-69_neural_1.5k.wav
+│   │       ├── recon_track-69_neural_12.0k.wav
+│   │       ├── recon_track-69_neural_24.0k.wav
+│   │       ├── recon_track-69_neural_3.0k.wav
+│   │       └── recon_track-69_neural_6.0k.wav
 │   └── traditional-coding
 │       ├── .gitkeep
-│       ├── recon_track-27_aac_12k.wav
-│       ├── recon_track-27_aac_24k.wav
-│       ├── recon_track-27_aac_48k.wav
-│       ├── recon_track-27_aac_64k.wav
-│       ├── recon_track-27_aac_8k.wav
-│       ├── recon_track-27_mp3_12k.wav
-│       ├── recon_track-27_mp3_24k.wav
-│       ├── recon_track-27_mp3_48k.wav
-│       ├── recon_track-27_mp3_64k.wav
-│       ├── recon_track-27_mp3_8k.wav
-│       ├── recon_track-49_aac_12k.wav
-│       ├── recon_track-49_aac_24k.wav
-│       ├── recon_track-49_aac_48k.wav
-│       ├── recon_track-49_aac_64k.wav
-│       ├── recon_track-49_aac_8k.wav
-│       ├── recon_track-49_mp3_12k.wav
-│       ├── recon_track-49_mp3_24k.wav
-│       ├── recon_track-49_mp3_48k.wav
-│       ├── recon_track-49_mp3_64k.wav
-│       ├── recon_track-49_mp3_8k.wav
-│       ├── recon_track-69_aac_12k.wav
-│       ├── recon_track-69_aac_24k.wav
-│       ├── recon_track-69_aac_48k.wav
-│       ├── recon_track-69_aac_64k.wav
-│       ├── recon_track-69_aac_8k.wav
-│       ├── recon_track-69_mp3_12k.wav
-│       ├── recon_track-69_mp3_24k.wav
-│       ├── recon_track-69_mp3_48k.wav
-│       ├── recon_track-69_mp3_64k.wav
-│       └── recon_track-69_mp3_8k.wav
+│       ├── track-27_trad
+│       │   ├── recon_track-27_aac_12k.wav
+│       │   ├── recon_track-27_aac_24k.wav
+│       │   ├── recon_track-27_aac_48k.wav
+│       │   ├── recon_track-27_aac_64k.wav
+│       │   ├── recon_track-27_aac_8k.wav
+│       │   ├── recon_track-27_mp3_12k.wav
+│       │   ├── recon_track-27_mp3_24k.wav
+│       │   ├── recon_track-27_mp3_48k.wav
+│       │   ├── recon_track-27_mp3_64k.wav
+│       │   └── recon_track-27_mp3_8k.wav
+│       ├── track-49_trad
+│       │   ├── recon_track-49_aac_12k.wav
+│       │   ├── recon_track-49_aac_24k.wav
+│       │   ├── recon_track-49_aac_48k.wav
+│       │   ├── recon_track-49_aac_64k.wav
+│       │   ├── recon_track-49_aac_8k.wav
+│       │   ├── recon_track-49_mp3_12k.wav
+│       │   ├── recon_track-49_mp3_24k.wav
+│       │   ├── recon_track-49_mp3_48k.wav
+│       │   ├── recon_track-49_mp3_64k.wav
+│       │   └── recon_track-49_mp3_8k.wav
+│       └── track-69_trad
+│           ├── recon_track-69_aac_12k.wav
+│           ├── recon_track-69_aac_24k.wav
+│           ├── recon_track-69_aac_48k.wav
+│           ├── recon_track-69_aac_64k.wav
+│           ├── recon_track-69_aac_8k.wav
+│           ├── recon_track-69_mp3_12k.wav
+│           ├── recon_track-69_mp3_24k.wav
+│           ├── recon_track-69_mp3_48k.wav
+│           ├── recon_track-69_mp3_64k.wav
+│           └── recon_track-69_mp3_8k.wav
 ├── scripts
 │   ├── neural-coding-sweep.py
 │   ├── objective-evaluation.py
@@ -279,4 +295,4 @@
 │   └── 69.flac
 └── tree_output.txt
 
-100 directories, 180 files
+111 directories, 185 files
