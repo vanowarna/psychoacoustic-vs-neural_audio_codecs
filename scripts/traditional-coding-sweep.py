@@ -8,20 +8,24 @@ def compress_traditional_sweep(input_wav, track_name, bitrates=["8k", "12k", "24
     print("--- Processing Traditional Codecs ---")
     audio = AudioSegment.from_file(input_wav)
     recon_files = {"mp3": {}, "aac": {}}
+
+    # Ensure per-track output subdirectory exists
+    track_dir = f"export-output/traditional-coding/{track_name}_trad"
+    os.makedirs(track_dir, exist_ok=True)
     
     for br in bitrates:
         print(f"Encoding at {br}bps...")
         
         # MP3 Processing
-        mp3_path = f"export-output/traditional-coding/temp_{br}.mp3"
-        mp3_recon = f"export-output/traditional-coding/recon_{track_name}_mp3_{br}.wav"
+        mp3_path = f"{track_dir}/temp_{br}.mp3"
+        mp3_recon = f"{track_dir}/recon_{track_name}_mp3_{br}.wav"
         audio.export(mp3_path, format="mp3", bitrate=br)
         AudioSegment.from_mp3(mp3_path).export(mp3_recon, format="wav")
         recon_files["mp3"][br] = mp3_recon
         
         # AAC Processing (requires ffmpeg installed on OS)
-        aac_path = f"export-output/traditional-coding/temp_{br}.aac"
-        aac_recon = f"export-output/traditional-coding/recon_{track_name}_aac_{br}.wav"
+        aac_path = f"{track_dir}/temp_{br}.aac"
+        aac_recon = f"{track_dir}/recon_{track_name}_aac_{br}.wav"
         audio.export(aac_path, format="adts", bitrate=br)
         AudioSegment.from_file(aac_path, format="aac").export(aac_recon, format="wav")
         recon_files["aac"][br] = aac_recon

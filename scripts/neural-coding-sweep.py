@@ -17,8 +17,9 @@ def compress_neural_sweep(input_wav, track_name, bandwidths=[1.5, 3.0, 6.0, 12.0
     model = EncodecModel.encodec_model_24khz().to(device)
     model.eval()
 
-    # Ensure output directory exists
-    os.makedirs("export-output/neural-coding", exist_ok=True)
+    # Ensure output directory exists (per-track subdirectory)
+    track_dir = f"export-output/neural-coding/{track_name}_neural"
+    os.makedirs(track_dir, exist_ok=True)
 
     # Load audio with soundfile (avoids torchaudio/torchcodec)
     wav_np, sr = sf.read(input_wav, always_2d=True)
@@ -45,7 +46,7 @@ def compress_neural_sweep(input_wav, track_name, bandwidths=[1.5, 3.0, 6.0, 12.0
         # Convert back to [time, channels] for soundfile
         reconstructed_wav = reconstructed_wav.squeeze(0).cpu().numpy().T
 
-        neural_recon_path = f"export-output/neural-coding/recon_{track_name}_neural_{bw}k.wav"
+        neural_recon_path = f"{track_dir}/recon_{track_name}_neural_{bw}k.wav"
         sf.write(neural_recon_path, reconstructed_wav, model.sample_rate)
 
         recon_files["neural"][f"{int(bw)}k"] = neural_recon_path
