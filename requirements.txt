@@ -1,0 +1,9 @@
+torch>=2.1,<3.0
+torchaudio>=2.1,<3.0
+pydub
+encodec
+numpy
+scipy
+matplotlib
+librosa
+soundfile
