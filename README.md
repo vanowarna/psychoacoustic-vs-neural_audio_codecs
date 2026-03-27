@@ -20,16 +20,31 @@ Comparative analysis of traditional psychoacoustic codecs (MP3, AAC) and neural 
 
 ## Quick Start
 
+### Linux (Ubuntu/Debian)
+
 ```bash
 chmod +x setup_and_run.sh
 ./setup_and_run.sh
 ```
 
-This will install dependencies (ffmpeg, Python libraries), run all encoding sweeps, and generate rate-distortion plots in `export-output/plots/`.
+### macOS
+
+```bash
+chmod +x setup_and_run_mac.sh
+./setup_and_run_mac.sh
+```
+
+### Windows (Command Prompt or PowerShell)
+
+```bat
+setup_and_run_windows.bat
+```
+
+Each script creates a local Python virtual environment, installs dependencies, runs all encoding sweeps, and generates rate-distortion plots in `export-output/plots/`.
 
 ## Dependencies
 
-- **System**: ffmpeg
+- **System**: ffmpeg (download from https://ffmpeg.org/download.html; package managers: `brew install ffmpeg` on macOS, `choco install ffmpeg` or `winget install --id Gyan.FFmpeg` on Windows)
 - **Python**: torch, torchaudio, pydub, encodec, numpy, scipy, matplotlib, librosa, soundfile
 
 ## Scripts
