@@ -19,7 +19,7 @@ if [ ! -x ".venv/bin/python" ]; then
   python3 -m venv .venv
 fi
 if [ ! -x ".venv/bin/python" ]; then
-  echo "[ERROR] Failed to create .venv"
+  echo "[ERROR] Failed to create .venv. Ensure Python 3 and the venv module are installed (e.g., reinstall Python via Homebrew)."
   exit 1
 fi
 

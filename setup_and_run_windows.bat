@@ -19,7 +19,7 @@ if not exist ".venv\Scripts\python.exe" (
     py -3 -m venv .venv || python -m venv .venv
 )
 if not exist ".venv\Scripts\python.exe" (
-    echo [ERROR] Failed to create .venv
+    echo [ERROR] Failed to create .venv. Ensure Python 3 is installed and that the venv module is available.
     popd
     exit /b 1
 )
