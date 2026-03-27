@@ -6,7 +6,7 @@ sudo apt update
 sudo apt install -y ffmpeg
 
 echo "=== Step 2: Python dependencies ==="
-pip install torch torchaudio pydub encodec numpy scipy matplotlib librosa soundfile
+pip install -r requirements.txt
 
 echo "=== Step 3: Traditional coding sweep ==="
 python scripts/traditional-coding-sweep.py

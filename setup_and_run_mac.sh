@@ -28,7 +28,7 @@ source .venv/bin/activate
 
 echo "=== Installing Python dependencies ==="
 python -m pip install --upgrade pip
-python -m pip install torch torchaudio pydub encodec numpy scipy matplotlib librosa soundfile
+python -m pip install -r requirements.txt
 
 echo "=== Running traditional coding sweep ==="
 python scripts/traditional-coding-sweep.py

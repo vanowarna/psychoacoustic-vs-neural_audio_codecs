@@ -1,0 +1,9 @@
+torch
+torchaudio
+pydub
+encodec
+numpy
+scipy
+matplotlib
+librosa
+soundfile

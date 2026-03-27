@@ -16,7 +16,7 @@ if errorlevel 1 (
 
 echo === Creating virtual environment (if needed) ===
 if not exist ".venv\Scripts\python.exe" (
-    py -3 -m venv .venv 2>nul || python -m venv .venv
+    py -3 -m venv .venv || python -m venv .venv
 )
 if not exist ".venv\Scripts\python.exe" (
     echo [ERROR] Failed to create .venv
@@ -33,7 +33,7 @@ call ".venv\Scripts\activate.bat" || (
 
 echo === Installing Python dependencies ===
 python -m pip install --upgrade pip
-python -m pip install torch torchaudio pydub encodec numpy scipy matplotlib librosa soundfile
+python -m pip install -r requirements.txt
 
 echo === Running traditional coding sweep ===
 python scripts\traditional-coding-sweep.py
