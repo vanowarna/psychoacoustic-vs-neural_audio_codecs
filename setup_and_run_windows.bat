@@ -18,6 +18,11 @@ echo === Creating virtual environment (if needed) ===
 if not exist ".venv\Scripts\python.exe" (
     py -3 -m venv .venv 2>nul || python -m venv .venv
 )
+if not exist ".venv\Scripts\python.exe" (
+    echo [ERROR] Failed to create .venv
+    popd
+    exit /b 1
+)
 
 echo === Activating virtual environment ===
 call ".venv\Scripts\activate.bat" || (

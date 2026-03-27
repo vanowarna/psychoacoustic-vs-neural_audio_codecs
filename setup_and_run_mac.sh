@@ -15,8 +15,12 @@ if ! command -v ffmpeg >/dev/null 2>&1; then
 fi
 
 echo "=== Creating virtual environment (if needed) ==="
-if [ ! -d ".venv" ]; then
+if [ ! -x ".venv/bin/python" ]; then
   python3 -m venv .venv
+fi
+if [ ! -x ".venv/bin/python" ]; then
+  echo "[ERROR] Failed to create .venv"
+  exit 1
 fi
 
 echo "=== Activating virtual environment ==="
