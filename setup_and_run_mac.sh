@@ -27,8 +27,8 @@ echo "=== Activating virtual environment ==="
 source .venv/bin/activate
 
 echo "=== Installing Python dependencies ==="
-python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
+python -m pip install --upgrade pip || { echo "[ERROR] Failed to upgrade pip"; exit 1; }
+python -m pip install -r requirements.txt || { echo "[ERROR] Failed to install Python dependencies from requirements.txt"; exit 1; }
 
 echo "=== Running traditional coding sweep ==="
 python scripts/traditional-coding-sweep.py

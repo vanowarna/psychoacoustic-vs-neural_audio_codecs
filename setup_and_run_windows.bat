@@ -16,7 +16,12 @@ if errorlevel 1 (
 
 echo === Creating virtual environment (if needed) ===
 if not exist ".venv\Scripts\python.exe" (
-    py -3 -m venv .venv || python -m venv .venv
+    where py >nul 2>&1
+    if not errorlevel 1 (
+        py -3 -m venv .venv
+    ) else (
+        python -m venv .venv
+    )
 )
 if not exist ".venv\Scripts\python.exe" (
     echo [ERROR] Failed to create .venv. Ensure Python 3 is installed and that the venv module is available.
@@ -33,7 +38,17 @@ call ".venv\Scripts\activate.bat" || (
 
 echo === Installing Python dependencies ===
 python -m pip install --upgrade pip
+if errorlevel 1 (
+    echo [ERROR] Failed to upgrade pip
+    popd
+    exit /b 1
+)
 python -m pip install -r requirements.txt
+if errorlevel 1 (
+    echo [ERROR] Failed to install Python dependencies from requirements.txt
+    popd
+    exit /b 1
+)
 
 echo === Running traditional coding sweep ===
 python scripts\traditional-coding-sweep.py
